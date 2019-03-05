@@ -10,6 +10,27 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body onload="init()">
-  <canvas id="gameCanvas" width="600px" height="100px"></canvas>
+  <div id="container">
+    <img src="images/logo.png"/>
+    <h1>Integer Number Line</h1>
+    <button onclick="reset()" id="reset">Reset</button>
+    <input type="radio" name="operation" id="add" value="add" checked>
+    <label for="add">Add integers</label>
+    <input type="radio" name="operation" id="subtract" value="subtract">
+    <label for="subtract">Subtract integers</label>
+    <div id="overlay-container">
+      <canvas id="gameCanvas" width="650px" height="140px"></canvas>
+      <p id="equation"><span class="first_integer">0</span> <span id="sign">+</span> (<span class="second_integer">0</span>) = <span id="result">0</span></p>
+    </div>
+    <label>Value of first integer = <span class="integer first_integer" id="first_integer">0</span></label>
+    <div class="slidecontainer">
+      <input type="range" name="first_integer" min="-10" value="0" max="10" class="slider">
+    </div>
+    <br>
+    <label>Value of second integer = <span class="integer second_integer" id="second_integer">0</span></label>
+    <div class="slidecontainer">
+      <input type="range" name="second_integer" min="-10" value="0" max="10" class="slider">
+    </div>
+  </div>
 </body>
 </html>
