@@ -1,1 +1,2 @@
-# wcln-game_integer_number_line
+# Integer Number Line
+https://wcln.ca/local/lor/index.php/resources/view/987
